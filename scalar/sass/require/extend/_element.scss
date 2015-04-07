@@ -1,0 +1,26 @@
+/* Helper for hide text into file
+ */
+%hide {
+	display: block;
+  overflow: hidden;
+  text-align: left;
+	text-indent: -9999em;
+  text-transform: uppercase;
+}
+
+
+/* Vertical align Anything
+ */
+%verticalcenter {
+  position: relative;
+  top: 50%;
+  @include translateY(-50%);
+}
+
+/* unstled list
+ */
+%unlist {
+  background: none;
+  padding-left: 0;
+  list-style: none;
+}

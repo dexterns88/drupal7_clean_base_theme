@@ -1,0 +1,30 @@
+/*
+| By:       Dejan Dudukovic
+|   G+:       https://www.google.com/+DejanDudukovic
+| Company:  EtonDigital
+|   G+:       https://plus.google.com/s/EtonDigital
+|   F :       https://www.facebook.com/etondigital
+|   W :       http://www.etondigital.com/
+| The MIT License (MIT)
+_____________________________________
+| theme is bundle of base style file for frontend
+| with defined standard for Drupal
+================================== */
+
+/*
+| Require
+| include require variable, mixin , extends
+*/
+@import "require/require_bundle";
+
+/* core theme */
+@import "core/core_bundle";
+
+/* bundler theme*/
+@import "theme_scss/theme_bundle";
+
+
+/*
+| Overide for overide all element
+| Must be a last css loaded fiel */
+//@import "overide/overide_bundle";

@@ -1,0 +1,13 @@
+.page-holder {
+	margin: 0 auto;
+	max-width: $minimal_pageHolderWidth;
+}
+
+code {
+	display: block;
+}
+
+// vertical align element depend on perent height
+.valign {
+  @extend %verticalcenter;
+}

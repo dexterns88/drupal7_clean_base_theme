@@ -1,0 +1,25 @@
+/*
+ | Layout
+ */
+
+/* Footer on bottom
+ */
+.page-main {
+  min-height: 100%;
+}
+
+.page-wrapper {
+  padding-bottom: $footer-height + $footer-margin;
+}
+
+.page-footer {
+  clear: both;
+  margin-top: - $footer-height;
+}
+
+/* page holder
+ */
+.page-holder {
+  max-width: $page-width;
+  width: 100%;
+}

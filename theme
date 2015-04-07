@@ -1,4 +1,32 @@
 #!/bin/bash
 
-compass compile clean_base/ $*;
-compass compile subtheme/ $*;
+case "$1" in
+'all' )
+echo ...
+  compass compile scalar/ ${@:2};
+echo ...
+  compass compile subtheme/ ${@:2};
+echo ...
+  echo " Themes compiled..."
+;;
+'help' )
+  echo -e
+  echo "Usage: theme"
+  echo "  all [param]           => compile all project run "
+  echo "  [theme_name] [param]  => for individual compile run"
+  echo ...
+;;
+'' )
+  echo -e
+  echo "Usage: theme"
+  echo "  all [param]           => compile all project run "
+  echo "  [theme_name] [param]  => for individual compile run"
+  echo ...
+;;
+*)
+  compass compile $*
+  echo $1 "Has compiled"
+esac
+
+# compass compile clean_base/ $*;
+# compass compile subtheme/ $*;

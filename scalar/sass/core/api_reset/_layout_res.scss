@@ -1,0 +1,33 @@
+* {
+  @include box-sizing(border-box);
+}
+
+html.no-js {
+	
+	body:before {
+		color: #C40005;
+		content: "javascript disabled. Please enable javascript in your browser.";
+		display: block;
+		text-align: center;
+	}
+}
+
+html {
+	height: 100%;
+	min-width: 320px;
+}
+
+body {
+  @include box-sizing(border-box);
+	height: 100%;
+	margin: 0;
+	overflow-y: auto;
+
+  &.col-static {
+
+    .container {
+      min-width: $screen-lg !important;
+    }
+  }
+}
+
